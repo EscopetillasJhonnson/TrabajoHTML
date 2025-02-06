@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/*COLORES*/
+.esmeralda{
+    height: 70px;
+    width: 70px;
+}
+.gris{
+    background-color: #9C9C9C;
+}
+.bnegro{
+    border: 1px solid black;
+}
+/*MEDIDAS*/
+.mh50{
+    height: 70px;
+}
+.mh160{
+    height: 164.4px;
+}
+.mh170{
+    height: 173.8px;
+}
+.mw1912{
+    width: 1912.5px;
+}
+.mw1915{
+    width: 1943px;
+}
+.marginBotones{
+    margin-left: 175px;
+    margin-top: 20px;
+}
+.paddingBotones{
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+.col{
+    margin: 0;
+    padding: 0;
+}
+.MedidasNumero{
+    text-align: center;
+    font-size: 30px;
+    padding: 12px;
+}
+.esmeraldaCentrada{
+    text-align: center;
+}
+.fondo{
+    background-image: url(images/desertlandscape.jpg);
+}
