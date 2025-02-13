@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*---------------APARIENCIA Y COLORES---------------*/
+.bnegro{
+    border: 3px solid black;
+}
+/*---------------MEDIDAS--------------*/
+#canvas{
+    background-color: blue;
+}
+
