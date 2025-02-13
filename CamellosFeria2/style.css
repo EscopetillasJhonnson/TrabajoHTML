@@ -4,10 +4,31 @@
 }
 /*---------------APARIENCIA Y COLORES---------------*/
 .bnegro{
-    border: 3px solid black;
+    border: 1px solid black;
 }
-/*---------------MEDIDAS--------------*/
+.gris{
+    background-color: gray;
+}
 #canvas{
     background-color: blue;
 }
+/*---------------MEDIDAS--------------*/
+.tamañoEsmeralda{
+    width: 60px;
+    height: 60px;
+    margin-top: 18px;
+}
+.centrado{
+    text-align: center;
+}
+.MargenSuperior{
+    margin-top: 27px;
+}
+.MargenBotones{
+    margin-top: 31px;
+    margin-left: 255px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
 

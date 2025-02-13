@@ -1,3 +1,4 @@
+
 var canvas, ctx;
 window.onload = function () {
     canvas = document.getElementById("canvas");
@@ -6,18 +7,26 @@ window.onload = function () {
         ctx = canvas.getContext("2d");
         if (ctx) {
             var sprite = new Image();
-            sprite.src = "images/camellosprite3.png"; // Asegúrate de que la imagen esté en la ruta correcta
+            sprite.src = "images/run.png"; // Asegúrate de que la imagen esté en la ruta correcta
 
             sprite.onload = function () {
-                let numColumns = 6; // Número correcto de columnas para el sprite sheet
+                let numColumns = 8; // Número correcto de columnas para el sprite sheet
                 let numRows = 1;    // Número correcto de filas para el sprite sheet
-                let frameWidth = sprite.width / numColumns;
+
+                let frameWidth = sprite.width / numColumns; 
                 let frameHeight = sprite.height / numRows;
+
                 let actualFrame = 0;
+                //DONDE VAMOS A MOSTRAR NUESTRO PERSONAJE
+                let dx = 10, x = 0;
+                let dy = 40, y = 30;
 
                 setInterval(function () {
                     actualFrame++;
-
+                    x += dx;
+                    if (x > canvas.width) {
+                        x = 0;
+                    }
                     let maxFrame = numColumns * numRows - 1;
                     if (actualFrame > maxFrame) {
                         actualFrame = 0;
@@ -37,9 +46,9 @@ window.onload = function () {
                      //La altura de la imagen recortada
                      frameHeight,
                      //La coordenada x donde colocar la imagen en el lienzo
-                     40,
+                     x,
                      //La coordenada y donde colocar la imagen en el lienzo
-                     30,
+                     y,
                      //El ancho de la imagen a usar (estirar o reducir la imagen)
                      frameWidth,
                      //El alto de la imagen a usar (estirar o reducir la imagen)
@@ -49,7 +58,6 @@ window.onload = function () {
         }
     }
 };
-
 
 
 
