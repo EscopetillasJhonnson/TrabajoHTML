@@ -12,6 +12,14 @@
 #canvas{
     background-color: blue;
 }
+
+.fondo{
+    background-image: url("images/fondo-carrera.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
 /*---------------MEDIDAS--------------*/
 .tamañoEsmeralda{
     width: 60px;
@@ -26,9 +34,10 @@
 }
 .MargenBotones{
     margin-top: 31px;
-    margin-left: 255px;
+    margin-left: 150px;
     border-radius: 5px;
     padding: 5px;
 }
+
 
 
