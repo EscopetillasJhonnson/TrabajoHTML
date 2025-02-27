@@ -1,12 +1,10 @@
 //import {NumeroDelCamelloGanador} from "camellos.js";
 
 let valorSpan = document.getElementById("valorActual");
+let botonclick = false;
 
-$(function(){
-    inicializarEventos();
-
-
-    function inicializarEventos(){
+function addbotonclick(){
+    
         let C1=$("#C1");
         let C2=$("#C2");
         let C3=$("#C3");
@@ -14,22 +12,43 @@ $(function(){
         let C5=$("#C5");
         let C6=$("#C6");
         
-        $apuesta = 0;
+        let apuesta = 0;
 
-        C1.click( $apuesta == 1);
-        C2.click( $apuesta == 2);
-        C3.click( $apuesta == 3);
-        C4.click( $apuesta == 4);
-        C5.click( $apuesta == 5);
-        C6.click( $apuesta == 6);
-    }
-      
-    setTimeout((apuesta, NumeroDelCamelloGanador) => {
-        if (apuesta === NumeroDelCamelloGanador) {
-            alert("¡Ganas!");
-            valorSpan.textContent = nuevoValor + 1;
-        } else {
-            alert("Pierdes");
-        }
-    },10000);
-});
+        C1.click(function(){
+            apuesta = 1;
+            botonclick = true;
+        });
+        C2.click(function(){
+            apuesta = 2;
+            botonclick = true;
+        });
+        C3.click(function(){
+            apuesta = 3;
+            botonclick = true;
+        });
+        C4.click(function(){
+            apuesta = 4;
+            botonclick = true;
+        });
+        C5.click(function(){
+            apuesta = 5;
+            botonclick = true;
+        });
+        C6.click(function(){
+            apuesta = 6;
+            botonclick = true;
+        });
+           
+        /*
+        setTimeout((apuesta, NumeroDelCamelloGanador) => {
+            if (apuesta == NumeroDelCamelloGanador) {
+                alert("¡Ganas!");
+                valorSpan.textContent = nuevoValor + 1;
+            } else {
+                alert("Pierdes");
+            }
+        },10000);
+        */
+       return botonclick;
+}
+
